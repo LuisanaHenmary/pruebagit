@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\LibroController;
+use App\Http\Controllers\ProductoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +26,10 @@ Route::get('cliente/{c?}', function($c=0) {
 
 
 
-Route::get('libro', [LibroController::class,'index']);
+
+Route::get('producto', [ProductoController::class,'index']);
+
+
 
 Route::get('destino/{c?}', function ($c=0) {
     	return view('destino',array('c' => $c ));
