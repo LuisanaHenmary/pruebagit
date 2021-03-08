@@ -12,8 +12,10 @@
        			<p>{{$producto->count()}}</p>
        			
        			@foreach($producto as $p)
+       				<p>----------------</p>
        				<p>{{$p->nombre}}</p>
        				<p>{{$p->precio}}</p>
+       				<p>{{$p->material}}</p>
        			@endforeach
 
        		@endif
